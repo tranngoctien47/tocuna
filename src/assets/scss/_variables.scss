@@ -1,0 +1,41 @@
+:root {
+    --primary: #2E3A61;
+    --secondary: #10244B;
+    --tertiary: #a3ff12;
+    --quaternary: #02273b;
+    --section: #005468;
+    --white: #ffffff;
+    --border: rgba(255, 255, 255, 0.15);
+
+    --text: rgba(255, 255, 255, 0.7);
+    --text-title: #0C0058;
+    --text-bg-white: #7B8399;
+    --text-primary: #2E3A61;
+    --text-bg: #3B40FF;
+    --text-blue: #2AF0FF;
+
+
+    // font size
+    --text-size: 16px;
+    --text-2size: 18px;
+    --text-md: 22px;
+    --text-xl: 24px;
+    --text-1xl: 26px;
+    --text-2xl: 32px;
+    --text-2xls: 40px;
+    --text-3xl: 64px;
+    --style-font-family: "Russo One";
+}
+
+@media all and (max-width: 600px) {
+    :root {
+        --text-size: 14px;
+        --text-2size: 16px;
+        --text-md: 20px;
+        --text-xl: 22px;
+        --text-1xl: 22px;
+        --text-2xl: 24px;
+        --text-2xls: 26px;
+        --text-3xl: 48px;
+    }
+}

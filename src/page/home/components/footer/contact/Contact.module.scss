@@ -1,0 +1,60 @@
+@import 'assets/scss/mixin';
+
+
+.contact {
+    position: absolute;
+    top: -150px;
+    width: 100%;
+}
+
+.warpper {
+    background: linear-gradient(265.7deg, #0A0AE4 14.38%, #7B26AE 126.36%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 250px;
+    padding: 50px;
+
+    @include center;
+
+    @include responsive(tablet) {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.text {
+    color: white;
+    width: 100%;
+
+    >h2 {
+        font-size: var(--text-2xl);
+        margin-bottom: 0.2em;
+    }
+
+    p {
+        color: var(--text);
+    }
+}
+
+.input {
+    width: 100%;
+    position: relative;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+
+    >input {
+        color: var(--white);
+    }
+
+    >button {
+        position: absolute;
+        top: -2px;
+        right: 0;
+        background: #FFFFFF;
+        border-radius: 30px;
+        padding: 10px 30px;
+        color: var(--text-bg);
+        font-weight: 600;
+    }
+}

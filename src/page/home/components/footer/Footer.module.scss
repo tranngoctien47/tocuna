@@ -1,0 +1,99 @@
+@import 'assets/scss/mixin';
+
+
+.warpper {
+    background: var(--secondary);
+    padding: 200px 0 100px 0;
+    position: relative;
+}
+
+
+
+
+.warpper-content {
+    display: flex;
+}
+
+
+
+.logo {
+    flex: 1;
+    @include center;
+    flex-direction: column;
+    gap: 20px;
+    color: #90AFD3;
+
+    >p {
+        text-align: center;
+    }
+}
+
+.link {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        >a {
+            color: #90AFD3;
+        }
+    }
+
+    @include responsive(mobile) {
+        flex-wrap: wrap;
+        gap: 50px;
+        text-align: end;
+        justify-content: end;
+        flex: 1;
+    }
+}
+
+
+
+.warpper-copy {
+    background: var(--secondary);
+    border-top: 1px solid #51b0f9;
+    height: 60px;
+    color: #90AFD3;
+
+    @include responsive(mobile) {
+        height: 100px;
+    }
+}
+
+.warpper-copy-context {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.warpper-copy-text {
+    flex: 1;
+
+    span {
+        font-size: var(--text-size);
+    }
+}
+
+.warpper-copy-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: end;
+
+    @include responsive(mobile) {
+        gap: 15px;
+    }
+
+    @media (max-width:350px) {
+        gap: 5px;
+    }
+}

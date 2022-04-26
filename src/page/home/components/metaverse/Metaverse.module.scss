@@ -1,0 +1,116 @@
+@import 'assets/scss/mixin';
+
+.metaverse {
+    margin: 100px 0;
+}
+
+.metaverses-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px 15px;
+    margin: auto;
+    background-size: cover !important;
+    background-position: 50% !important;
+    height: 655px;
+
+    @media (max-width:1200px) {
+        background: none !important;
+        padding: 0;
+    }
+
+    @include responsive(smallLaptop) {
+        height: 100%;
+    }
+
+
+}
+
+.metaverses {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+
+    @include responsive(smallLaptop) {
+        flex-direction: column;
+    }
+}
+
+.metaverses-content {
+    &:first-child {
+        flex: 1.87;
+        height: 100%;
+
+        @media (max-width:1200px) {
+            background: #3B40FF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &:last-child {
+        flex: 3;
+        height: 100%;
+
+        @media (max-width:1200px) {
+            background: #10244B;
+        }
+    }
+}
+
+.metaverses-content-context {
+    padding: 50px;
+    color: #ffffff;
+
+    h1 {
+        font-size: var(--text-3xl);
+        font-weight: 700;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: var(--text-size);
+    }
+
+    p {
+        margin-top: 50px;
+        color: var(--text);
+        font-size: 14px;
+    }
+
+    @include responsive(smallLaptop) {
+        padding: 30px;
+
+        p {
+            margin-top: 1em;
+        }
+    }
+}
+
+.metaverses-content-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    gap: 30px;
+
+    @include responsive(mobile) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: #ffffff;
+
+    span {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    p {
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.7);
+
+    }
+}

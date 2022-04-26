@@ -1,0 +1,91 @@
+@import 'assets/scss/mixin.scss';
+
+.ecosystem {
+    margin: 100px 0 200px 0;
+}
+
+
+.ecosystem-title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    >h2 {
+        font-size: var(--text-1xl);
+        color: var(--text-bg);
+    }
+
+    >span {
+        font-size: var(--text-xl);
+        font-weight: 500;
+    }
+}
+
+.warppper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    @include responsive(tablet) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+.warppper-context {
+    position: relative;
+    background:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#0000FF, #BD0EFF) border-box;
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 35px;
+    height: 400px;
+
+    @include responsive(laptop) {
+        height: 500px;
+    }
+
+    @include responsive(tablet) {
+        height: 100%;
+    }
+
+
+    >img {
+        width: 50px;
+        height: 60px;
+    }
+
+    >span {
+        font-size: var(--text-xl);
+        color: var(--text-bg);
+    }
+
+    >p {
+        margin-top: 30px;
+        line-height: 2;
+        font-size: var(--text-2size);
+        color: var(--text-bg-white);
+    }
+
+    >button {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+
+        @include responsive(mobile) {
+            bottom: 15px;
+            right: 10px;
+        }
+
+        >img {
+            width: 30px;
+        }
+
+
+    }
+}
