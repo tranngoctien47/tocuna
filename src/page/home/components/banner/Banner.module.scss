@@ -19,7 +19,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     position: relative;
 
     >h2 {
@@ -34,6 +34,7 @@
 
     >p {
         color: var(--white);
+        line-height: 1.5;
     }
 }
 
