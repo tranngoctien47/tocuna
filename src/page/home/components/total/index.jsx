@@ -18,7 +18,8 @@ function Total() {
                         <div className={s.context} key={i}
                             data-aos="fade-up"
                             data-aos-offset="30">
-                            <span>{e.number}</span>
+                            {/* <span>{e.number}</span> */}
+                            <img src={e?.number} alt="" />
                             <p>{e.text}</p>
                         </div>
                     ))}

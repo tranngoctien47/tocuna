@@ -15,7 +15,7 @@ export default function MainLayout2() {
         <>
             {/* <SildeBar /> */}
 
-            <div className='home'>
+            <div className='home' style={{ overflow: 'hidden' }}>
                 <Outlet />
             </div>
             {/* <Loadding /> */}

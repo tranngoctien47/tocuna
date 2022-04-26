@@ -24,7 +24,7 @@
 .wrapper-content {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 
     @include responsive(laptop) {
         >nav {

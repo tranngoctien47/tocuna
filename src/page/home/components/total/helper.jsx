@@ -1,18 +1,24 @@
+import otherTwins from 'assets/svg/other twins.svg'
+import Abilities from 'assets/svg/abilities.svg'
+import Markets from 'assets/svg/markets.svg'
+import Intelligence from 'assets/svg/intelligence.svg'
+
+
 export const ListTotal = [
     {
-        number: '36M',
-        text: 'Registered users',
+        number: otherTwins,
+        text: 'Other Twins',
     },
     {
-        number: '176',
-        text: 'Countries supported',
+        number: Abilities,
+        text: 'Markets',
     },
     {
-        number: '$10M',
-        text: 'Withdrawn each month',
+        number: Markets,
+        text: 'Abilities',
     },
     {
-        number: '18k',
-        text: 'Active investors daily',
+        number: Intelligence,
+        text: 'Intelligence',
     },
 ]
